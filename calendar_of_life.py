@@ -21,17 +21,17 @@ for dark_mode in [True, False]:
     fig, ax = plt.subplots(figsize=(w, h))
     ax.set_axis_off()
     fig.suptitle("Calendar of life", y=0.89)
-    birthday = datetime.date(1990, 12, 28)
+    birthday = datetime.date(1990, 3, 17)
     today = datetime.date.today()
     life = [
         ("born", birthday),
-        ("early childhood", birthday + datetime.timedelta(days=4.5 * 365)),
+        ("early childhood", birthday + datetime.timedelta(days=4.15 * 365)),
         ("school", datetime.date(2003, 8, 18)),
         ("high school", datetime.date(2009, 9, 1)),
-        ("university", datetime.date(2015, 8, 1)),
-        ("travel", datetime.date(2016, 2, 1)),
-        ("phd", datetime.date(2020, 2, 1)),
-        ("work", today),
+        ("university", datetime.date(2017, 7, 13)),
+        ("work", datetime.date(2018, 10, 1)),
+        ("freelance engineer", datetime.date(2019, 7, 1)),
+        ("phd", today),
     ]
 
     stages = [key for key, date in life]
@@ -44,7 +44,7 @@ for dark_mode in [True, False]:
         "school": "C1",
         "high school": "C2",
         "university": "C3",
-        "travel": "C8",
+        "freelance engineer": "C8",
         "phd": "C6",
         "work": "C4",
         "future": face,
