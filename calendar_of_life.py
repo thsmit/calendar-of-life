@@ -29,8 +29,7 @@ for dark_mode in [True, False]:
         ("school", datetime.date(2003, 8, 18)),
         ("high school", datetime.date(2009, 9, 1)),
         ("university", datetime.date(2017, 7, 13)),
-        ("work", datetime.date(2018, 10, 1)),
-        ("freelance engineer", datetime.date(2019, 7, 1)),
+        ("work in industry (NL)", datetime.date(2019, 7, 1)),
         ("phd", today),
     ]
 
@@ -46,7 +45,7 @@ for dark_mode in [True, False]:
         "university": "C3",
         "freelance engineer": "C8",
         "phd": "C6",
-        "work": "C4",
+        "work in industry (NL)": "C4",
         "future": face,
     }
     week_num = 0
